@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 5: Event List</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="input-data-container">
+        <div class="input-value-container">
+            <label for="pet-name-input">Pet Name</label>
+            <input type="text" id="pet-name-input" placeholder="Enter pet name..."  value="Kitty">
+        </div>
+        <div class="input-value-container">
+            <label for="owner-name-input">Owner Name</label>
+            <input type="text" id="owner-name-input" placeholder="Enter pet's owner name..." value="Neo">
+        </div>
+        <div class="input-value-container">
+            <label for="event-date-input">Event Date</label>
+            <input type="date" id="event-date-input" min="2019-01-01" max="2019-12-01" value="2019-01-01">
+        </div>
+        <div class="input-value-container">
+            <label for="event-time-input">Event Time</label>
+            <input type="time" id="event-time-input" min="08:00" max="18:00" value="11:00">
+        </div>
+        <div class="input-value-container">
+            <label for="event-note-input">Event Note</label>
+            <textarea id="event-note-input"></textarea>
+        </div>
+        <div class="add-note">
+            <button type="button" id="add-event-btn">Add</button>
+        </div>
+    </div>
+    <div class="sort-container">
+        <label for="sort-dropdown">Sort by:</label>
+            <select id="sort-dropdown">
+                <option value="no">No sort</option>
+                <option value="date">By date</option>
+                <option value="owner">By Owner name</option>
+                <option value="pet">By Pet name</option>
+            </select>
+    </div>
+    <div id="task-container"></div>
+</div>
+</body>
+</html>
